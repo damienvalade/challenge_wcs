@@ -1,0 +1,37 @@
+{# **************** #}
+{# **** Layout **** #}
+{# **************** #}
+
+<!doctype html>
+<html lang="fr">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{%  block description %}{% endblock %}">
+    <meta name="author" content="Damien Valade">
+
+    <title>{% block titre %}{% endblock %} - Test WCS</title>
+
+    <link href="/css/normalize.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+    {% block link %}{% endblock %}
+
+</head>
+
+<body>
+
+{% include "/Layout/header.html.twig" %}
+
+
+<main>
+{% block main %}{% endblock %}
+</main>
+
+{% include "/Layout/footer.html.twig" %}
+
+{% block script %}{% endblock %}
+
+</body>
+</html>
