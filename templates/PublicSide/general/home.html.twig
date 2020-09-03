@@ -13,11 +13,14 @@
 
         <!-- New member form -->
         <h2>Ajouter un(e) Argonaute</h2>
-        <form class="new-member-form">
+        <div class="new-member-form">
             <label for="name">Nom de l'Argonaute</label>
-            <input id="name" name="name" type="text" placeholder="Charalampos" />
+            {{ form_start(form) }}
+            {{ form_row(form.name) }}
+            {{ form_row(form.quality) }}
             <button type="submit">Envoyer</button>
-        </form>
+            {{ form_end(form) }}
+        </div>
 
         <!-- Member list -->
         <h2>Membres de l'équipage</h2>
