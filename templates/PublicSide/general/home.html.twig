@@ -11,23 +11,24 @@
 
     <main>
 
-        <!-- New member form -->
-        <h2>Ajouter un(e) Argonaute</h2>
-        <div class="new-member-form">
-            <label for="name">Nom de l'Argonaute</label>
+        <section class="new-member-form container form-group">
+            <h2 class="h2 pb-3">Ajouter un(e) Argonaute</h2>
             {{ form_start(form) }}
             {{ form_row(form.name) }}
             {{ form_row(form.quality) }}
-            <button type="submit">Envoyer</button>
+            <button class="btn btn-secondary" type="submit">Envoyer</button>
             {{ form_end(form) }}
-        </div>
+        </section>
 
         <!-- Member list -->
-        <h2>Membres de l'équipage</h2>
-        <section class="member-list">
-            {% for candidate in candidates %}
-            <div class="member-item">{{ candidate.name }}</div>
-            {% endfor %}
+
+        <section class="member-list container">
+            <h2 class="h2 pb-3">Membres de l'équipage</h2>
+            <ul class="row">
+                {% for candidate in candidates %}
+                    <li class=" member-item col-md-4 col-6 text-center">{{ candidate.name }}</li>
+                {% endfor %}
+            </ul>
         </section>
     </main>
 
