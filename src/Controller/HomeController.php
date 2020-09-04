@@ -30,7 +30,6 @@ class HomeController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $candidate->setName($form->get('name')->getData());
-            $candidate->setQuality($form->get('quality')->getData());
             $entityManager->persist($candidate);
             $entityManager->flush();
         }

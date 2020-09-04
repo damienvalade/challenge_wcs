@@ -15,10 +15,6 @@ class CandidateType extends AbstractType
         $builder
             ->add('name', TextType::class, [
                 'label_format' => 'Nom de l\'Argonaute'
-            ])
-            ->add('quality', TextType::class, [
-                'label_format' => 'Qualité',
-                'required' => false
             ]);
     }
 

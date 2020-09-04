@@ -22,10 +22,6 @@ class Candidates
      */
     private $name;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $quality;
 
     public function getId(): ?int
     {
@@ -40,18 +36,6 @@ class Candidates
     public function setName(string $name): self
     {
         $this->name = $name;
-
-        return $this;
-    }
-
-    public function getQuality(): ?string
-    {
-        return $this->quality;
-    }
-
-    public function setQuality(?string $quality): self
-    {
-        $this->quality = $quality;
 
         return $this;
     }
