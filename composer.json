@@ -1,6 +1,19 @@
 {
+    "name": "damienvalade/challenge_wcs",
+    "version": "1.0.0",
     "type": "project",
-    "license": "proprietary",
+    "description": "Challenge WCS",
+    "authors": [
+        {
+            "name": "Damien Valade",
+            "email": "damien@damienvalade.fr",
+            "homepage": "https://portfolio.damienvalade.fr/"
+        }
+    ],
+    "support": {
+        "email": "damien@damienvalade.fr",
+        "issues": "https://github.com/damienvalade/challenge_wcs/issues"
+    },
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
